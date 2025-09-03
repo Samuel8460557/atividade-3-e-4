@@ -9,7 +9,7 @@ class PrincipalController extends Controller
     public function bakery(){
         return view('bakery');
     }
-    
+
     public function sobrenos(){
         return view('sobrenos');
 
@@ -17,5 +17,8 @@ class PrincipalController extends Controller
 
     public function contato(){
         return view('contato');
+    }
+    public function enviarcontato(Request $request){
+        dd($request->post());
     }
 }
